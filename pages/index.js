@@ -24,6 +24,7 @@ function HomePage() {
         }}
       >
         {code}
+        Hello world this is live
       </div>
     </div>
   )
