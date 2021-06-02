@@ -49,46 +49,31 @@ var _jsxFileName = "/home/runner/MyNewWebsite/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
 function HomePage() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
-      code = _useState[0],
-      setCode = _useState[1];
-
-  var initialCode = 'ez4371';
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    var result = '';
-
-    for (var i = 0; i < initialCode.length; i++) {
-      var number = initialCode.charCodeAt(i) % 10;
-      result += number;
-    }
-
-    setCode(result);
-  }, []);
   return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, __jsx("button", {
     style: {
-      width: '100%'
+      color: "white",
+      background: "blue",
+      border: "none",
+      fontSize: "2rem",
+      padding: "1rem",
+      cursor: "pointer"
+    },
+    onClick: function onClick() {
+      return alert('Hello world!!!');
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 4
     },
     __self: this
-  }, __jsx("div", {
-    style: {
-      height: 'CALC(100vh - 1rem)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontSize: '2rem'
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, code));
+  }, "Hello world"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);

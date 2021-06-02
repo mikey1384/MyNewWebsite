@@ -1,33 +1,21 @@
-import { useEffect, useState } from 'react';
-
 function HomePage() {
-  const [code, setCode] = useState('');
-  const initialCode = 'ez4371';
-  useEffect(() => {
-    let result = '';
-    for (let i = 0; i < initialCode.length; i++) {
-      const number = initialCode.charCodeAt(i) % 10;
-      result += number;
-    }
-    setCode(result);
-  }, []);
-
   return (
-    <div style={{ width: '100%' }}>
-      <div
+    <div>
+      <button
         style={{
-          height: 'CALC(100vh - 1rem)',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: '2rem'
+          color: "white",
+          background: "blue",
+          border: "none",
+          fontSize: "2rem",
+          padding: "1rem",
+          cursor: "pointer"
         }}
+        onClick={() => alert('Hello world!!!')}
       >
-        {code}
-        Hello world this is live
-      </div>
+        Hello world
+      </button>
     </div>
-  )
+  );
 }
 
 export default HomePage;

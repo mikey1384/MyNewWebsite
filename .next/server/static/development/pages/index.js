@@ -108,46 +108,29 @@ var _jsxFileName = "/home/runner/MyNewWebsite/pages/index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
 function HomePage() {
-  const {
-    0: code,
-    1: setCode
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('');
-  const initialCode = 'ez4371';
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    let result = '';
-
-    for (let i = 0; i < initialCode.length; i++) {
-      const number = initialCode.charCodeAt(i) % 10;
-      result += number;
-    }
-
-    setCode(result);
-  }, []);
   return __jsx("div", {
-    style: {
-      width: '100%'
-    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 3
     },
     __self: this
-  }, __jsx("div", {
+  }, __jsx("button", {
     style: {
-      height: 'CALC(100vh - 1rem)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontSize: '2rem'
+      color: "white",
+      background: "blue",
+      border: "none",
+      fontSize: "2rem",
+      padding: "1rem",
+      cursor: "pointer"
     },
+    onClick: () => alert('Hello world!!!'),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 4
     },
     __self: this
-  }, code));
+  }, "Hello world"));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (HomePage);
